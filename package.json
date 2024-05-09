@@ -1,0 +1,20 @@
+{
+  "name": "my-cv",
+  "version": "1.0.0",
+  "description": "My cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DawidPiecha/my-cv.git"
+  },
+  "author": "Dawid Piecha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DawidPiecha/my-cv/issues"
+  },
+  "homepage": "https://github.com/DawidPiecha/my-cv#readme",
+  "type": "commonjs"
+}

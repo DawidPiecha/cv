@@ -1,0 +1,102 @@
+.experience {
+  padding: 0 20px 3px 30px;
+  letter-spacing: 0.5px;
+  border-left: 2px solid var(--border-color);
+  color: var(--heading-color);
+  margin-bottom: 40px;
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../graphics/icons/dot.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    position: absolute;
+    left: -8px;
+    bottom: -18px;
+    transform: translateY(-50%);
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 0;
+    position: relative;
+    margin-bottom: 40px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-image: url("../../graphics/icons/dot.svg");
+      background-repeat: no-repeat;
+      background-size: 15px;
+      position: absolute;
+      left: -38px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--box-bg-color);
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 25px;
+    &:first-child {
+      background-color: var(--present-work-bg);
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+  }
+
+  &__employer-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__position {
+    color: var(--text-color);
+  }
+  &__employer {
+    font-weight: 500;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &__right-wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    row-gap: 16px;
+  }
+  &__location-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__period {
+    font-size: 15px;
+    color: var(--text-color);
+  }
+  &__span {
+    color: var(--specific-font-color);
+  }
+  &__place {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+}

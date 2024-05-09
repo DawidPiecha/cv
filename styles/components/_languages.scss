@@ -1,0 +1,38 @@
+.languages {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+    &__title {
+      color: var(--text-color);
+      margin-top: 0;
+      font-size: 14px;
+    }
+    &__list {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+    }
+  
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 18px;
+    }
+    &__heading {
+      margin: 0;
+      color: var(--second-text-color);
+    }
+    &__text {
+      color: var(--text-color);
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  

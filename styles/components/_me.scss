@@ -1,0 +1,46 @@
+.me {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  border-bottom: 3px solid var(--border-color);
+  font-family: "Black Ops One", system-ui;
+  text-align: center;
+  &__image {
+    max-width: 70%;
+    border-radius: 18px;
+    margin: 0 auto;
+    box-shadow: 1px 2px 2px hsl(220deg 60% 50% / 0.2),
+      2px 4px 4px hsl(220deg 60% 50% / 0.2),
+      4px 8px 8px hsl(220deg 60% 50% / 0.2),
+      8px 16px 16px hsl(220deg 60% 50% / 0.2);
+  }
+  &__name {
+    font-size: 40px;
+    font-weight: 400;
+
+    letter-spacing: 0.2rem;
+    color: var(--heading-color);
+    margin: 0;
+    line-height: 1.8;
+  }
+  &__position {
+    color: var(--position-color);
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    line-height: 1.8;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid grey;
+    animation: text 4s steps(20) alternate infinite;
+  }
+}
+
+@keyframes text {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 98%;
+  }
+}

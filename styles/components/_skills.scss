@@ -1,0 +1,108 @@
+.skills {
+  padding: 0 20px 3px 30px;
+  letter-spacing: 0.5px;
+  border-left: 2px solid var(--border-color);
+  color: var(--heading-color);
+  margin-bottom: 40px;
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../graphics/icons/dot.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    position: absolute;
+    left: -8px;
+    bottom: -18px;
+    transform: translateY(-50%);
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 0;
+    position: relative;
+    margin-bottom: 40px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-image: url("../../graphics/icons/dot.svg");
+      background-repeat: no-repeat;
+      background-size: 15px;
+      position: absolute;
+      left: -38px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__category-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  &__heading {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--text-color);
+  }
+  &__list-wrapper {
+    color: var(--text-color);
+    position: relative;
+    padding: 0 30px;
+    &::before {
+      color: var(--brace-color);
+      content: "{";
+      position: absolute;
+      left: 0;
+      top: 45%;
+      transform: translateY(-50%);
+      font-size: 15em;
+    }
+    &::after {
+      content: "}";
+      color: var(--brace-color);
+      position: absolute;
+      right: 0;
+      top: 45%;
+      transform: translateY(-50%);
+      font-size: 15em;
+    }
+  }
+  &__list {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+  }
+  &__list.show {
+    opacity: 1;
+  }
+
+  &__item {
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--box-bg-color);
+    width: 100px;
+    padding: 10px;
+    border-radius: 18px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+}

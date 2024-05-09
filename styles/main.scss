@@ -1,0 +1,19 @@
+@import "./vars";
+@import "./commons";
+
+//ASIDE
+@import "./components/me";
+@import "./components/contacts";
+@import "./components/links";
+@import "./components/languages";
+
+//MAIN
+@import "./components/theme-button";
+@import "./components/skills";
+@import "./components/tools";
+@import "./components/projects";
+@import "./components/education";
+@import "./components/experience";
+
+//MODAL
+@import "./components/modal-window";

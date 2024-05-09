@@ -1,0 +1,55 @@
+:root {
+  --body-bg-gradient: linear-gradient(to right, #ece9e6, #ffffff);
+  --aside-bg-color: linear-gradient(to right, #f7f9fc, #eefafe);
+  --main-bg-color: #ffffff;
+  --heading-color: #2e2e48;
+  --heading-second-color: #47516b;
+  --position-color: #666ff3;
+  --text-color: #79819a;
+  --second-text-color: #47516b;
+  --border-color: #e2e6ee;
+  --box-bg-color: #f7f9fc;
+  --present-work-bg: #f8f2fc;
+  --secondary-box-bg-color: #f8f2fc;
+  --icon-color: #f8f2fc;
+  --icon-bg-color: rgba(121, 129, 154, 1);
+  --specific-font-color: #9251f7;
+  --overlay-bg-color: rgba(247, 249, 252, 0.8);
+  --overlay-secondary-bg-color: rgba(243, 178, 39, 0.8);
+  --overlay-link-hover-color: rgba(243, 178, 39, 1);
+  --theme-button-bg: #effafe;
+  --theme-button-border-color: #666ff3;
+  --pseudoicon-bg-color: rgba(121, 129, 154, 1);
+  --brace-color: #79819a;
+  --education-name-wrapper-bg-color: #f8f2fc;
+  --certificate-overlay-bg-color: #f8f2fc;
+  --backdrop-bg-color: rgba(121, 129, 154, 0.5);
+}
+
+.dark-theme {
+  --body-bg-gradient: linear-gradient(
+    to bottom,
+    rgba(35, 35, 57, 0.9),
+    #2e2e48
+  );
+  --aside-bg-color: #2e2e48;
+  --main-bg-color: #232339;
+  --heading-color: #e2e6ee;
+  --heading-second-color: #d0d5df;
+  --text-color: #acb1c3;
+  --second-text-color: #e5e5e5;
+  --border-color: #43435a;
+  --box-bg-color: #2e2e48;
+  --present-work-bg: rgba(102, 111, 243, 1);
+  --secondary-box-bg-color: #312163;
+  --icon-color: #d0d5df;
+  --icon-bg-color: #232339;
+  --specific-font-color: #ffffff;
+  --theme-button-bg: rgba(121, 129, 154, 1);
+  --theme-button-border-color: rgba(121, 129, 154, 1);
+  --pseudoicon-bg-color: rgba(243, 178, 39, 1);
+  --overlay-bg-color: rgba(121, 129, 154, 0.9);
+  --brace-color: #666ff3;
+  --education-name-wrapper-bg-color: #f8f2fc;
+  --certificate-overlay-bg-color: rgba(102, 111, 243, 1);
+}

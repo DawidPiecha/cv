@@ -1,0 +1,32 @@
+.theme-button {
+  position: absolute;
+  right: 80px;
+  background-color: var(--theme-button-bg);
+  border-radius: 50px;
+  border: 1px solid var(--theme-button-border-color);
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  &__pseudoicon {
+    background-color: var(--pseudoicon-bg-color);
+    content: "";
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    transition: transform 300ms;
+    position: relative;
+  }
+}
+body.dark-theme .theme-button__pseudoicon {
+  transform: translateX(25px);
+}
+body.dark-theme .theme-button__pseudoicon::after {
+  content: "";
+  background-color: var(--theme-button-bg);
+  display: block;
+  border-radius: 100%;
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  left: -11px;
+}

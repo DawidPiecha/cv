@@ -1,0 +1,37 @@
+.links {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid var(--border-color);
+  &__title {
+    color: var(--text-color);
+    margin-top: 0;
+    font-size: 14px;
+  }
+  &__list {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+  &__heading {
+    margin: 0;
+    color: var(--text-color);
+  }
+  &__link {
+    color: var(--second-text-color);
+    font-weight: 700;
+    font-size: 18px;
+  }
+}

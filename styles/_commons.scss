@@ -1,0 +1,62 @@
+body {
+  font-family: "Kanit", sans-serif;
+  padding: 50px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: var(--body-bg-gradient);
+  background-size: 200%;
+  animation: bg-animation 5s infinite alternate;
+  letter-spacing: 2px;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img,
+svg {
+  display: block;
+}
+p {
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80vw;
+  justify-content: center;
+  margin: 0 auto;
+  background: var(--main-bg-color);
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+aside {
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: var(--aside-bg-color);
+  padding: 45px;
+}
+main {
+  width: 70%;
+  border-radius: 10px;
+  background: var(--main-bg-color);
+  padding: 42px 24px 32px 36px;
+  position: relative;
+  & section {
+    margin: 100px 0;
+  }
+}
+iframe {
+  width: 100%;
+}
