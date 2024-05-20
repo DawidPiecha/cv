@@ -32,27 +32,37 @@ p {
 }
 .wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  width: 80vw;
+  position: relative;
+  flex-direction: column-reverse;
+  width: 70vw;
   justify-content: center;
   margin: 0 auto;
+
   background: var(--main-bg-color);
   border-radius: 10px;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  @include medium {
+    flex-direction: row-reverse;
+  }
 }
 aside {
-  width: 30%;
   border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
   background: var(--aside-bg-color);
   padding: 45px;
+  @include medium {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
 }
+
 main {
-  width: 70%;
   border-radius: 10px;
   background: var(--main-bg-color);
   padding: 42px 24px 32px 36px;
   position: relative;
+  @include medium {
+  }
   & section {
     margin: 100px 0;
   }

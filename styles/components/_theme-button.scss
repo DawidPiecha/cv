@@ -1,32 +1,51 @@
 .theme-button {
   position: absolute;
-  right: 80px;
+  padding: 0px 3px;
+  top: 15px;
+  right: 15px;
   background-color: var(--theme-button-bg);
   border-radius: 50px;
   border: 1px solid var(--theme-button-border-color);
   cursor: pointer;
-  width: 70px;
-  height: 40px;
+  width: 35px;
+  height: 20px;
+  z-index: 10;
+  @include medium {
+    width: 66px;
+    height: 40px;
+  }
   &__pseudoicon {
     background-color: var(--pseudoicon-bg-color);
     content: "";
     border-radius: 100%;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 16px;
     transition: transform 300ms;
     position: relative;
+    @include medium {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 body.dark-theme .theme-button__pseudoicon {
-  transform: translateX(25px);
+  transform: translateX(12px);
+  @include medium {
+    transform: translateX(27px);
+  }
 }
 body.dark-theme .theme-button__pseudoicon::after {
   content: "";
   background-color: var(--theme-button-bg);
   display: block;
   border-radius: 100%;
-  width: 30px;
-  height: 28px;
+  width: 15px;
+  height: 14.5px;
   position: absolute;
-  left: -11px;
+  left: -6px;
+  @include medium {
+    width: 30px;
+    height: 28px;
+    left: -12px;
+  }
 }
