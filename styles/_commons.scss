@@ -1,12 +1,15 @@
 body {
   font-family: "Kanit", sans-serif;
-  padding: 50px;
+  padding: 10px;
   background-size: cover;
   background-attachment: fixed;
   background-image: var(--body-bg-gradient);
   background-size: 200%;
   animation: bg-animation 5s infinite alternate;
   letter-spacing: 2px;
+  @include medium {
+    padding: 50px;
+  }
 }
 @keyframes bg-animation {
   0% {
@@ -34,10 +37,9 @@ p {
   display: flex;
   position: relative;
   flex-direction: column-reverse;
-  width: 70vw;
+  width: 90vw;
   justify-content: center;
   margin: 0 auto;
-
   background: var(--main-bg-color);
   border-radius: 10px;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
