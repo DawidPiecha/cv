@@ -50,6 +50,10 @@
     padding: 20px;
     padding-left: 15px;
     padding-right: 25px;
+    font-size: 10px;
+    @include medium {
+      font-size: 14px;
+    }
     &:first-child {
       background-color: var(--present-work-bg);
       border-top-left-radius: 18px;
@@ -81,22 +85,25 @@
     flex-direction: column;
     display: flex;
     align-items: flex-end;
+    text-align: end;
     row-gap: 16px;
   }
   &__location-wrapper {
     display: flex;
-    align-items: center;
-    column-gap: 10px;
+    align-items: flex-end;
+
+    @include medium {
+      column-gap: 10px;
+      align-items: center;
+    }
   }
   &__period {
-    font-size: 15px;
     color: var(--text-color);
   }
   &__span {
     color: var(--specific-font-color);
   }
   &__place {
-    font-size: 14px;
     color: var(--text-color);
   }
 }

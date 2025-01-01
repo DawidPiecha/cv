@@ -14,29 +14,17 @@
   pointer-events: none;
   transform: rotate(100deg);
 }
-.certificate-modal {
+.certificate-modal__close {
   position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 85%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-
-  &__close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background-color: transparent;
-    border: none;
-    transition-property: transform;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.2);
-    }
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
   }
 }

@@ -368,6 +368,33 @@
                   </div>
                 </div>
               </li>
+              <li class="projects__item">
+                <div class="projects__image-area">
+                  <img
+                    class="projects__image"
+                    alt="WebStudio website screenshot"
+                    src="./graphics//images/node_express.jpg"
+                  />
+                  <div class="projects__overlay">
+                    <div class="projects__overlay-links">
+                      <a
+                        href="https://github.com/DawidPiecha/nodejs-homeworks"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        ><svg width="35" height="35">
+                          <use
+                            href="./graphics/icons/icons.svg#icon-embed2"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <h4 class="projects__overlay-heading">Node JS</h4>
+                    <p class="projects__overlay-text">
+                      Practical Node JS tasks during the course.
+                    </p>
+                  </div>
+                </div>
+              </li>
             </ul>
           </section>
           <section class="education">
@@ -677,13 +704,39 @@
             <use href="./graphics/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="certificate-modal">
-          <iframe
-            src="./pdf/certificate.pdf"
-            width="100%"
-            height="3600"
-          ></iframe>
+        <div class="slider">
+          <div class="slide">
+            <img
+              src="./graphics/images/cert1.jpg"
+              alt="first page of GOIT certificate"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./graphics/images/cert2.jpg"
+              alt="second page of GOIT certificate"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./graphics/images/cert3.jpg"
+              alt="third page of GOIT certificate"
+            />
+          </div>
+
+          <button class="btn btn-prev">
+            <svg width="50" height="50">
+              <use href="./graphics/icons/arrows.svg#icon-left"></use>
+            </svg>
+          </button>
+          <button class="btn btn-next">
+            <svg width="50" height="50">
+              <use href="./graphics/icons/arrows.svg#icon-right"></use>
+            </svg>
+          </button>
         </div>
+
+        <p class="slide-number"></p>
       </div>
       <script src="./index.js" type="module"></script>
     </body>

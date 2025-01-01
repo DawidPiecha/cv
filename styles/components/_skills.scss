@@ -40,7 +40,11 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
+    @include medium {
+      flex-direction: row;
+    }
   }
 
   &__category-wrapper {
@@ -49,6 +53,10 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    border-bottom: 10px solid var(--border-color);
+    @include medium {
+      border-bottom: none;
+    }
   }
   &__heading {
     margin: 0;
@@ -60,6 +68,7 @@
     color: var(--text-color);
     position: relative;
     padding: 0 30px;
+
     &::before {
       color: var(--brace-color);
       content: "{";
@@ -83,6 +92,7 @@
     display: flex;
     margin: 0;
     align-items: center;
+
     flex-wrap: wrap;
     justify-content: center;
     opacity: 0;

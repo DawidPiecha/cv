@@ -14,11 +14,6 @@ openModalButton.addEventListener("click", openModal);
 
 closeButton.addEventListener("click", closeModal);
 
-window.addEventListener("click", (event) => {
-  if (event.target === backdrop) {
-    closeModal();
-  }
-});
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal();
