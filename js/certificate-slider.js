@@ -15,16 +15,16 @@ const showSlide = (index) => {
 };
 
 // Funkcja do przełączania na poprzedni slajd
-function prevSlide() {
+const prevSlide = () => {
   currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
   showSlide(currentSlideIndex);
-}
+};
 
 // Funkcja do przełączania na następny slajd
-function nextSlide() {
+const nextSlide = () => {
   currentSlideIndex = (currentSlideIndex + 1) % slides.length;
   showSlide(currentSlideIndex);
-}
+};
 
 // Obsługa kliknięć przycisków prev i next
 prevBtn.addEventListener("click", prevSlide);
